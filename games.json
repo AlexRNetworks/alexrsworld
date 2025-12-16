@@ -61,7 +61,8 @@
     "description": "Bloons is a fun arcade game in which you need to pop as many bloons as possible.",
     "path": "Games/ruffle/bloons.html",
     "category": "Strategy",
-    "iframe": true
+    "iframe": true,
+    "otherversions": true
   },
   {
     "title": "Bloons Super Monkey",
@@ -206,7 +207,8 @@
     "description": "Play one of the best mobile games ever made right in your browser.",
     "path": "Games/standalone/subwaysurfers.html",
     "category": "Runner",
-    "iframe": true
+    "iframe": true,
+    "otherversions": true
   },
 {
  "title": "Temple Run 2",
@@ -2245,6 +2247,84 @@
     "category": "Arcade",
     "iframe": false
   },
+
+
+  {
+    "title": "Pokemon Ruby Version",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/ruby.jpg",
+    "description": "Play the classic Pokemon Ruby Version game now!",
+    "path": "Games/emulated/GBA/rubyversion.html",
+    "category": "Strategy",
+    "iframe": true
+  },
+
+
+  {
+    "title": "Pokemon Sapphire Version",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/sapphire.webp",
+    "description": "Play the classic Pokemon Sapphire Version game now!",
+    "path": "Games/emulated/GBA/sapphireversion.html",
+    "category": "Strategy",
+    "iframe": true
+  },
+
+  {
+    "title": "Pokemon Fire Red Version",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/firered.jpg",
+    "description": "Play the classic Pokemon Fire Red Version game now!",
+    "path": "Games/emulated/GBA/fireredversion.html",
+    "category": "Strategy",
+    "iframe": true
+  },
+
+
+  {
+    "title": "Pokemon Leaf Green Version",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/leafgreen.jpg",
+    "description": "Play the classic Pokemon Leaf Green Version game now!",
+    "path": "Games/emulated/GBA/leafgreenversion.html",
+    "category": "Strategy",
+    "iframe": true
+  },
+
+
+  {
+    "title": "Pokemon Emerald Version",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/emeral.avif",
+    "description": "Play the classic Pokemon Emerald Version game now!",
+    "path": "Games/emulated/GBA/emeraldversion.html",
+    "category": "Strategy",
+    "iframe": true
+  },
+
+{
+  "title:": "Mario Kart 64",
+  "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/kart64.jpg",
+  "description": "Race against the other racers and prove yourseld victorious in this classic game.",
+  "path": "Games/emulated/N64/mariokart64.html",
+  "category": "Racing",
+  "iframe": true
+},
+
+{
+  "title": "Super Mario 64",
+  "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/super mario 64.webp",
+  "description": "Join Mario on his quest to save Princess Peach in this classic 3D platformer.",
+  "path": "Games/emulated/N64/supermario64.html",
+  "category": "Adventure",
+  "iframe": true
+},
+
+{
+  "title": "Earthbound",
+  "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/earthbound.webp",
+  "description": "Embark on a unique RPG adventure in the quirky world of Earthbound.",
+  "path": "Games/emulated/SNES/earthbound.html",
+  "category": "Adventure",
+  "iframe": true
+},
+
+
   {
     "title": "Soundboard",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/soundboard.png",
