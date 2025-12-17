@@ -484,6 +484,34 @@
         transition: transform 0.2s;
         overflow: hidden;
     }
+
+    /* Favorite button for library cards */
+    .lib-fav-btn {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        background: rgba(0,0,0,0.45);
+        border: 1px solid rgba(255,255,255,0.12);
+        color: white;
+        padding: 6px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 4;
+    }
+    .lib-fav-btn i { pointer-events: none; font-size: 0.9rem; }
+    .lib-fav-btn.favorited {
+        background: var(--ps-light-blue);
+        color: #000;
+        border-color: rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+        .lib-fav-btn { padding: 8px; top: 10px; right: 10px; }
+        .lib-fav-btn i { font-size: 1.05rem; }
+    }
     body.theme-hacker .lib-card { background: #011; box-shadow: none; }
     body.theme-tokyo .lib-card { background: #102; box-shadow: none; }
     body.theme-red .lib-card { background: #200; box-shadow: none; } 
@@ -713,6 +741,82 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
     input:checked + .slider:before {
         transform: translateX(26px);
     }
+
+    /* Responsive tweaks */
+    @media (max-width: 1200px) {
+        :root {
+            --card-size: 110px;
+            --card-selected: 160px;
+            --anim-speed: 0.22s;
+        }
+        .top-bar { padding: 22px 36px; font-size: 1.25rem; }
+        .carousel-container { padding-left: 36px; gap: 12px; }
+        .info-area { padding-left: 36px; }
+    }
+
+    @media (max-width: 900px) {
+        :root { --card-size: 100px; --card-selected: 150px; }
+        .top-bar { padding: 18px 24px; font-size: 1.15rem; }
+        .nav-hint { display: none; }
+        .carousel-container { padding-left: 24px; gap: 12px; }
+        .sub-content { gap: 12px; }
+        .sub-tile { height: 140px; width: 100%; }
+    }
+
+    @media (max-width: 600px) {
+        :root { --card-size: 84px; --card-selected: 130px; }
+        body { height: auto; overflow: auto; }
+        .top-bar { padding: 12px 16px; font-size: 1rem; gap:8px; flex-wrap: wrap; align-items: center; }
+        .site-title { font-size: 1.1rem; }
+        .site-title-group { flex: 1 1 auto; }
+        .clock-area { font-size: 1rem; }
+        .carousel-container { padding-left: 16px; gap: 10px; overflow-x: auto; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
+        .carousel-container .card { scroll-snap-align: center; }
+        .info-area { padding-left: 16px; margin-top: 18px; }
+        .sub-content { flex-direction: column; }
+        .sub-tile { width: 100%; height: 130px; }
+        .library-overlay { padding: 12px; }
+        .lib-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
+        .game-modal > div:first-child { height: 52px; padding: 8px 12px; }
+        .game-modal .close-btn { padding: 10px 12px; font-size: 1rem; }
+        .show-bar-btn { display: block !important; }
+        .restore-bar-btn { top: 12px; }
+
+        /* Make top-bar more compact and stack actions */
+        .top-bar { display: flex; flex-direction: row; align-items: center; }
+        .top-bar .site-title-group { order: 1; }
+        .top-bar .nav-hint { order: 3; display: none; }
+        .top-bar .clock-area { order: 2; }
+
+        /* Overlay header & grid behavior */
+        .library-overlay, .otherOverlay { padding: 12px; }
+        .library-overlay .lib-header, .otherOverlay .lib-header { position: sticky; top: 0; z-index: 5; background: rgba(11,23,48,0.98); padding-top: 8px; padding-bottom: 8px; }
+        .library-overlay .lib-grid { overflow-y: auto; max-height: calc(100vh - 220px); padding-bottom: 30px; }
+        .library-overlay .lib-filters { position: sticky; top: 56px; z-index: 4; background: transparent; padding-top: 10px; padding-bottom: 10px; }
+
+        .lib-search { width: 100%; }
+        .lib-categories { gap: 8px; }
+
+        .category-btn { padding: 10px 12px; font-size: 0.95rem; }
+        .lib-card { min-height: 110px; border-radius: 6px; }
+
+        /* Tabs & buttons should be touch-friendly */
+        .other-tabs { overflow-x: auto; padding-bottom: 8px; }
+        .tab-btn { padding: 10px 14px; border-radius: 8px; white-space: nowrap; }
+    }
+
+    @media (max-width: 420px) {
+        :root { --card-size: 74px; --card-selected: 110px; }
+        .top-bar .clock-area { display: none; }
+        .site-title img { height: 22px; }
+        .game-title { font-size: 1.4rem; }
+        .lib-grid { grid-template-columns: 1fr; }
+        .nav-hint { display: none; }
+
+        .close-btn { padding: 12px 14px; font-size: 1rem; }
+        .tab-btn { display: inline-block; font-size: 0.95rem; }
+        .library-overlay .lib-header, .otherOverlay .lib-header { padding-left: 10px; padding-right: 10px; }
+    }
 </style>
 </head>
 <body>
@@ -786,6 +890,7 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             <button class="tab-btn" id="tab_themes" onclick="showOtherTab('themes')">Themes</button>
             <button class="tab-btn" id="tab_sounds" onclick="showOtherTab('sounds')">Sounds</button>
             <button class="tab-btn" id="tab_cloak" onclick="showOtherTab('cloak')">Tab Cloak</button>
+            <button class="tab-btn" id="tab_credits" onclick="showOtherTab('credits')">Credits</button>
         </div>
 
         <div id="other_changelog">
@@ -828,7 +933,7 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             <div style="margin-top:15px;">
                 <button class="close-btn" onclick="applyCloakPreset('Google Docs','https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico')">Google Docs</button>
                 <button class="close-btn" onclick="applyCloakPreset('Google Classroom','https://www.gstatic.com/classroom/logo_square_rounded.svg')">Google Classroom</button>
-                <button class="close-btn" onclick="applyCloakPreset('Clever | Portal','https://cdn.iconscout.com/icon/free/png-256/clever-36-458117.png')">Clever</button>
+                <button class="close-btn" onclick="applyCloakPreset('Clever | Portal','https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/clever.jpg')">Clever</button>
             </div>
 
             <hr style="margin:20px 0; border-color:rgba(255,255,255,0.1);">
@@ -859,6 +964,14 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             <p>Ambience Volume:</p>
             <input type="range" id="ambienceVolume" min="0" max="1" step="0.1" value="0.5" oninput="setAmbienceVolume(this.value)" style="width: 100%; margin-top: 10px;">
         </div>
+
+        <div id="other_credits" style="display:none;">
+            <h3>Credits</h3>
+            <p>Alexr - UI, UX and games.</p>
+            <p>Michiganontop - Sounds</p>
+            <p>Carteryes - Unity ports</p>
+            <p>Thank you!</p>
+        </div>
     </div>
 
     <script>
@@ -872,6 +985,18 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
         const libCategoriesDiv = document.getElementById('libCategories');
         const gameSuggestionsDatalist = document.getElementById('game-suggestions');
         const subContent = document.querySelector('.sub-content'); 
+
+        // Play select sound when interacting with the library/favorites search input
+        if (libSearchInput) {
+            // Use focus and Enter; avoid click to prevent double-trigger (focus + click) on some browsers
+            libSearchInput.addEventListener('focus', () => playSound('select'));
+            libSearchInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    playSound('select');
+                    renderOverlayGrid();
+                }
+            });
+        }
 
         let allGamesData = []; 
         let displayList = [];
@@ -941,6 +1066,10 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             select: new Audio('sounds/select.mp3'),
         };
         
+        // Per-sound cooldowns (ms) to avoid duplicates while allowing frequent hover sounds
+        const _soundCooldowns = { hover: 80, select: 220, click: 220 };
+        const _lastSoundPlay = {};
+
         function loadSoundSettings() {
             const saved = localStorage.getItem('alexrGames_sounds_enabled') === 'true';
             areSoundsEnabled = saved;
@@ -973,6 +1102,12 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
 
         function playSound(name) {
             if (!areSoundsEnabled) return;
+            const now = Date.now();
+            const cooldown = (_soundCooldowns && _soundCooldowns[name] != null) ? _soundCooldowns[name] : 200;
+            const last = _lastSoundPlay[name] || 0;
+            if (now - last < cooldown) return;
+            _lastSoundPlay[name] = now;
+
             const audio = soundEffects[name];
             if (audio) {
                 audio.currentTime = 0;
@@ -1329,14 +1464,16 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             updateSelection(displayList.findIndex(g => !g.systemType) || 0); 
         }
 
-        function getUniqueCategories() {
-            const categories = allGamesData.map(game => game.category).filter(Boolean);
+        function getUniqueCategories(gamesList) {
+            const source = Array.isArray(gamesList) ? gamesList : allGamesData;
+            const categories = source.map(game => game.category).filter(Boolean);
             return ['All', ...new Set(categories)];
         }
         
         function renderSearchSuggestions() {
             gameSuggestionsDatalist.innerHTML = '';
-            allGamesData.forEach(game => {
+            const sourceList = (currentOverlayMode === 'favorites') ? allGamesData.filter(g => favoritesSet.has(g.title)) : allGamesData;
+            sourceList.forEach(game => {
                 const option = document.createElement('option');
                 option.value = game.title;
                 gameSuggestionsDatalist.appendChild(option);
@@ -1345,7 +1482,13 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
 
         function renderCategoryButtons() {
             libCategoriesDiv.innerHTML = '';
-            const categories = getUniqueCategories();
+
+            const sourceList = (currentOverlayMode === 'favorites') ? allGamesData.filter(g => favoritesSet.has(g.title)) : allGamesData;
+            const categories = getUniqueCategories(sourceList);
+
+            if (!categories.includes(currentCategoryFilter)) {
+                currentCategoryFilter = 'All';
+            }
 
             categories.forEach(category => {
                 const button = document.createElement('button');
@@ -1358,10 +1501,11 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
                 }
 
                 button.onclick = () => {
+                    playSound('select');
                     currentCategoryFilter = category;
                     renderCategoryButtons();
                     renderOverlayGrid();
-                };
+                }; 
 
                 libCategoriesDiv.appendChild(button);
             });
@@ -1393,6 +1537,13 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             } else {
                 libraryTitle.textContent = 'Your Favorites';
                 gamesToShow = allGamesData.filter(g => favoritesSet.has(g.title));
+
+                const searchTerm = libSearchInput.value.toLowerCase().trim();
+                gamesToShow = gamesToShow.filter(game => {
+                    const matchesSearch = !searchTerm || game.title.toLowerCase().includes(searchTerm);
+                    const matchesCategory = currentCategoryFilter === 'All' || game.category === currentCategoryFilter;
+                    return matchesSearch && matchesCategory;
+                });
             }
 
             gamesToShow.forEach((game) => {
@@ -1400,8 +1551,36 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
                 card.className = 'lib-card';
                 card.innerHTML = `
                     <img src="${game.img || ''}" onerror="this.style.display='none'">
+                    <button class="lib-fav-btn" aria-label="${favoritesSet.has(game.title) ? 'Unfavorite' : 'Favorite'}">
+                        <i class="${favoritesSet.has(game.title) ? 'fas' : 'far'} fa-heart"></i>
+                    </button>
                     <div class="lib-card-title">${game.title}</div>
                 `;
+
+                const favBtn = card.querySelector('.lib-fav-btn');
+                if (favBtn) {
+                    if (favoritesSet.has(game.title)) favBtn.classList.add('favorited');
+                    favBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        if (favoritesSet.has(game.title)) {
+                            favoritesSet.delete(game.title);
+                            favBtn.classList.remove('favorited');
+                            const icon = favBtn.querySelector('i'); if (icon) icon.className = 'far fa-heart';
+                            favBtn.setAttribute('aria-label','Favorite');
+                        } else {
+                            favoritesSet.add(game.title);
+                            favBtn.classList.add('favorited');
+                            const icon = favBtn.querySelector('i'); if (icon) icon.className = 'fas fa-heart';
+                            favBtn.setAttribute('aria-label','Unfavorite');
+                        }
+                        saveFavorites();
+                        playSound('select');
+
+                        if (currentOverlayMode === 'favorites') renderOverlayGrid();
+                        try { updateFavoriteTile(displayList[selectedIndex]); } catch(e) {}
+                    });
+                }
+
                 card.onclick = () => {
                     playSound('select');
                     toggleOverlay(false);
@@ -1412,7 +1591,7 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
         }
 
         function updateSelection(index) {
-            if(isLibraryOpen || isOtherOpen) return;
+            if(isLibraryOpen || isOtherOpen || document.querySelector('.game-modal')) return;
             if(index < 0) index = 0;
             if(index >= displayList.length) index = displayList.length - 1;
             
@@ -1422,20 +1601,18 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             cards.forEach(c => c.classList.remove('active'));
             if (cards[index]) cards[index].classList.add('active');
 
-            const cardWidth = 130; 
-            const gap = 15;
-            let offset = 0;
-            
+            const computedGap = parseFloat(getComputedStyle(carousel).gap || getComputedStyle(carousel).columnGap || 15);
             let activeCardPosition = 0;
-            for(let i = 0; i < index; i++) {
-                activeCardPosition += (cards[i].classList.contains('active') ? 180 : 130) + gap;
+            for (let i = 0; i < index; i++) {
+                activeCardPosition += (cards[i] ? cards[i].offsetWidth : 0) + computedGap;
             }
-            
-            const currentCardWidth = cards[index].classList.contains('active') ? 180 : 130;
-            
-            const targetOffset = activeCardPosition - (2 * (130 + gap));
-            offset = Math.max(0, targetOffset);
-            
+
+            const visibleBefore = 2;
+            const activeWidth = cards[index] ? cards[index].offsetWidth : (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--card-size')) || 130);
+
+            let offset = activeCardPosition - (visibleBefore * (activeWidth + computedGap));
+            offset = Math.max(0, offset);
+
             carousel.style.transform = `translateX(-${offset}px)`;
 
             const g = displayList[index];
@@ -1469,6 +1646,7 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
         }
 
         function activateItem(index) {
+            if (document.querySelector('.game-modal')) return;
             playSound('select');
             const item = displayList[index];
 
@@ -1481,6 +1659,10 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
                 toggleOverlay(true);
             } else if (item.systemType === 'favorites') {
                 currentOverlayMode = 'favorites';
+                currentCategoryFilter = 'All';
+                libSearchInput.value = '';
+                renderSearchSuggestions();
+                renderCategoryButtons();
                 renderOverlayGrid();
                 toggleOverlay(true);
             } else if (item.systemType === 'settings') {
@@ -1499,9 +1681,13 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
                 libOverlay.classList.add('show');
                 libOverlay.style.opacity = '0';
                 setTimeout(()=>libOverlay.style.opacity='1', 10);
+                try { document.body.style.overflow = 'hidden'; } catch(e) {}
+                try { libOverlay.setAttribute('role','dialog'); libOverlay.setAttribute('aria-hidden','false'); } catch(e) {}
+                setTimeout(() => { try { libOverlay.querySelector('.close-btn').focus(); } catch (e) {} }, 80);
             } else {
                 libOverlay.style.opacity = '0';
-                setTimeout(()=>libOverlay.classList.remove('show'), 300);
+                setTimeout(()=>{ libOverlay.classList.remove('show'); try { libOverlay.setAttribute('aria-hidden','true'); } catch(e) {}} , 300);
+                try { document.body.style.overflow = ''; } catch(e) {}
                 
                 if (!isOtherOpen && !document.querySelector('.game-modal')) {
                     playAmbience();
@@ -1520,10 +1706,14 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
                 otherOverlay.classList.add('show');
                 otherOverlay.style.opacity = '0';
                 setTimeout(() => otherOverlay.style.opacity = '1', 10);
+                try { document.body.style.overflow = 'hidden'; } catch(e) {}
+                try { otherOverlay.setAttribute('role','dialog'); otherOverlay.setAttribute('aria-hidden','false'); } catch(e) {}
+                setTimeout(() => { try { otherOverlay.querySelector('.close-btn').focus(); } catch (e) {} }, 80);
             } else {
                 playSound('click');
                 otherOverlay.style.opacity = '0';
-                setTimeout(() => otherOverlay.classList.remove('show'), 300);
+                setTimeout(() => { otherOverlay.classList.remove('show'); try { otherOverlay.setAttribute('aria-hidden','true'); } catch(e) {} }, 300);
+                try { document.body.style.overflow = ''; } catch(e) {}
                 
                 if (!isLibraryOpen && !isOtherOpen) {
                     playAmbience();
@@ -1532,9 +1722,11 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
         }
 
         function showOtherTab(tab) {
-            const tabs = ['changelog','proxy','themes','sounds','cloak'];
+            playSound('select');
+            const tabs = ['changelog','proxy','themes','sounds','cloak','credits'];
             tabs.forEach(t => {
-                document.getElementById('other_' + t).style.display = (t === tab) ? 'block' : 'none';
+                const el = document.getElementById('other_' + t);
+                if (el) el.style.display = (t === tab) ? 'block' : 'none';
                 const btn = document.getElementById('tab_' + t);
                 if (btn) {
                     if (t === tab) btn.classList.add('active');
@@ -1544,7 +1736,6 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
         }
 
       function launchGame(game) {
-    // Assuming pauseAmbience() is defined elsewhere
     pauseAmbience(); 
 
     const modal = document.createElement('div');
@@ -1553,7 +1744,7 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
     
     const bar = document.createElement('div');
     Object.assign(bar.style, {
-        height: '40px', background: '#222', display: 'flex', // Crucial: display is 'flex' when visible
+        height: '40px', background: '#222', display: 'flex', 
         alignItems: 'center', padding: '0 20px',
         justifyContent: 'space-between', color:'white', gap:'10px'
     });
@@ -1647,6 +1838,8 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
 
         document.body.removeChild(modal);
         
+        try { updateSelection(4); } catch(e) { console.warn('updateSelection on close failed', e); }
+
         if (!isLibraryOpen && !isOtherOpen) {
             playAmbience();
         }
@@ -1745,9 +1938,7 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             console.warn('Error in hide bar handler:', err);
         }
     };
-    // *** END: The fixed btnHide logic ***
-
-    // Content loading logic
+  
     if (game.iframe) {
         
         const frame = document.createElement('iframe');
@@ -1801,6 +1992,17 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
     modal.appendChild(bar);
     modal.appendChild(frameWrapper);
     document.body.appendChild(modal);
+
+    setTimeout(() => {
+        try {
+            const iframeEl = frameWrapper.querySelector('iframe');
+            if (iframeEl) {
+                try { iframeEl.tabIndex = -1; iframeEl.focus(); } catch(e) {}
+            } else {
+                try { frameWrapper.tabIndex = -1; frameWrapper.focus(); } catch(e) {}
+            }
+        } catch(e) {}
+    }, 50);
     
     promoteToRecent(game); 
 }
@@ -1857,9 +2059,11 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
 
         
         window.addEventListener('keydown', (e) => {
-            if (isLibraryOpen || isOtherOpen) {
+            const modalOpen = !!document.querySelector('.game-modal');
+
+            if (isLibraryOpen || isOtherOpen || modalOpen) {
                 if(e.key === 'Escape') {
-                    if(isLibraryOpen) {
+                    if (isLibraryOpen) {
                         libSearchInput.value = '';
                         currentCategoryFilter = 'All';
                         renderCategoryButtons();
@@ -1867,6 +2071,20 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
                         closeOverlay();
                     } else if (isOtherOpen) {
                         toggleOther(false);
+                    } else if (modalOpen) {
+                        // Close the modal via its close button if present, otherwise remove it
+                        const modalEl = document.querySelector('.game-modal');
+                        if (modalEl) {
+                            const closeBtn = modalEl.querySelector('.close-btn');
+                            if (closeBtn) {
+                                closeBtn.click();
+                            } else {
+                                modalEl.remove();
+                            }
+                        }
+
+                        // Make sure we return the selection to the first game after closing
+                        try { updateSelection(4); } catch (e) { console.warn('updateSelection on Escape close failed', e); }
                     }
                 }
                 return;
@@ -1972,9 +2190,7 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
         
         loadCloak();
 
-        // Mouse wheel navigation: use scroll wheel to move selection left/right
         let lastWheelTime = 0;
-        // Decreased cooldown and made threshold smaller for snappier navigation
         const wheelCooldownMs = 120;
         window.addEventListener('wheel', (e) => {
             try {
@@ -1985,10 +2201,8 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
                 if (now - lastWheelTime < wheelCooldownMs) return;
 
                 const delta = e.deltaY || e.wheelDelta || 0;
-                // Allow smaller gestures to trigger navigation for better responsiveness
                 if (Math.abs(delta) < 5) return;
 
-                // Prevent normal page scroll
                 if (e.preventDefault) e.preventDefault();
 
                 if (delta > 0) {
@@ -2004,12 +2218,57 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
             }
         }, { passive: false });
 
+        (function(){
+            let touchStartX = 0;
+            let touchStartY = 0;
+            let touchStartTime = 0;
+            let touchMoved = false;
+            const swipeThreshold = 40; 
+            const swipeTime = 500;
+
+            carousel.addEventListener('touchstart', (e) => {
+                if (isLibraryOpen || isOtherOpen || document.querySelector('.game-modal')) return;
+                const t = e.touches[0];
+                touchStartX = t.clientX;
+                touchStartY = t.clientY;
+                touchStartTime = Date.now();
+                touchMoved = false;
+            }, { passive: true });
+
+            carousel.addEventListener('touchmove', (e) => {
+                if (!touchStartX) return;
+                const t = e.touches[0];
+                const dx = Math.abs(t.clientX - touchStartX);
+                const dy = Math.abs(t.clientY - touchStartY);
+                if (dx > 10 && dx > dy) {
+                    e.preventDefault && e.preventDefault();
+                    touchMoved = true;
+                }
+            }, { passive: false });
+
+            carousel.addEventListener('touchend', (e) => {
+                if (!touchStartTime) return;
+                const t = e.changedTouches[0];
+                const dx = t.clientX - touchStartX;
+                const dt = Date.now() - touchStartTime;
+                touchStartX = 0; touchStartY = 0; touchStartTime = 0;
+
+                if (Math.abs(dx) > swipeThreshold && dt < swipeTime && touchMoved) {
+                    if (dx < 0) {
+                        updateSelection(Math.min(displayList.length - 1, selectedIndex + 1));
+                    } else {
+                        updateSelection(Math.max(0, selectedIndex - 1));
+                    }
+                    playSound('hover');
+                }
+            }, { passive: true });
+        })();
+
         loadTheme();
         loadGames();
         loadPS5BackgroundSetting();
         loadSoundSettings();
 
-        // Safety: ensure top bar is restored if a game modal is removed by other code
         (function(){
             const bodyObserver = new MutationObserver((mutations) => {
                 for (const m of mutations) {
@@ -2017,6 +2276,8 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
                         if (n && n.nodeType === 1 && n.classList && n.classList.contains('game-modal')) {
                             const r = document.getElementById('restoreBarBtn'); if (r) try { r.remove(); } catch(e) {}
                             const pageTop = document.querySelector('.top-bar'); if (pageTop) pageTop.classList.remove('hidden');
+
+                            try { updateSelection(4); } catch(e) { console.warn('updateSelection after mutation failed', e); }
                         }
                     }
                 }
