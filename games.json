@@ -1419,8 +1419,8 @@
 
 
   {
-    "title": "Ultimate Custom Night",
-    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/ultimatecustomnight.webp",
+    "title": "FNAF: Ultimate Custom Night",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/ucn.jpg",
     "description": "Ultimate Custom Night is a horror game where you are able to customize how the night plays out.",
     "path": "Games/standalone/ultimatecustomnight.html",
     "category": "Challenging",
@@ -2334,6 +2334,33 @@
     "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/earthbound.webp",
     "description": "Embark on a unique RPG adventure in the quirky world of Earthbound.",
     "path": "Games/emulated/SNES/earthbound.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "Donkey Kong Country",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/donkeykongcountry.jpg",
+    "description": "Join Donkey Kong and Diddy Kong on a jungle adventure in this classic platformer.",
+    "path": "Games/emulated/SNES/donkeykongcountry.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "Donkey Kong Country 2",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/donkeykongcountry2.jpg",
+    "description": "Join Diddy Kong and Dixie Kong on a new adventure to rescue Donkey Kong in this classic platformer sequel.",
+    "path": "Games/emulated/SNES/donkeykongcountry2.html",
+    "category": "Adventure",
+    "iframe": true  
+  },
+
+  {
+    "title": "Donkey Kong Country 3",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/donkeykongcountry3.webp",
+    "description": "Join Dixie Kong and Kiddy Kong on a new adventure to rescue Donkey Kong and Diddy Kong!",
+    "path": "Games/emulated/SNES/donkeykongcountry3.html",
     "category": "Adventure",
     "iframe": true
   },
