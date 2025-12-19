@@ -271,6 +271,16 @@
     "category": "Arcade",
     "iframe": true
   },
+
+   {
+    "title": "Pacman World",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/pacmanworld.jpg",
+    "description": "Pacman World is a fun and challenging Pacman game.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/emulated/GBA/pacmanworld.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
   {
     "title": "Galaga",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/galaga.jpg",
