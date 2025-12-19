@@ -2250,33 +2250,38 @@ const response = await fetch('https://raw.githubusercontent.com/dskjfoisjfsjio/a
         
         loadCloak();
 
-        let lastWheelTime = 0;
-        const wheelCooldownMs = 120;
-        window.addEventListener('wheel', (e) => {
-            try {
-                if (isLibraryOpen || isOtherOpen) return;
-                if (document.querySelector('.game-modal')) return;
+       let lastWheelTime = 0;
+const wheelCooldownMs = 120;
 
-                const now = Date.now();
-                if (now - lastWheelTime < wheelCooldownMs) return;
+window.addEventListener('wheel', (e) => {
+    try {
+        if (isLibraryOpen || isOtherOpen) return;
+        if (document.querySelector('.game-modal')) return;
 
-                const delta = e.deltaY || e.wheelDelta || 0;
-                if (Math.abs(delta) < 5) return;
+        const now = Date.now();
+        if (now - lastWheelTime < wheelCooldownMs) return;
 
-                if (e.preventDefault) e.preventDefault();
+        const delta = e.deltaY || e.wheelDelta || 0;
+        if (Math.abs(delta) < 5) return;
 
-                if (delta > 0) {
-                    updateSelection(Math.min(displayList.length - 1, selectedIndex + 1));
-                } else {a
-                    updateSelection(Math.max(0, selectedIndex - 1));
-                }
+        if (e.preventDefault) e.preventDefault();
 
-                playSound('hover');
-                lastWheelTime = now;
-            } catch (err) {
-                console.warn('Wheel navigation error:', err);
-            }
-        }, { passive: false });
+        let nextIndex;
+        if (delta > 0) {
+            nextIndex = (selectedIndex >= displayList.length - 1) ? 0 : selectedIndex + 1;
+        } else {
+            nextIndex = (selectedIndex <= 0) ? displayList.length - 1 : selectedIndex - 1;
+        }
+
+        updateSelection(nextIndex);
+
+        playSound('hover'); 
+        
+        lastWheelTime = now;
+    } catch (err) {
+        console.warn('Wheel navigation error:', err);
+    }
+}, { passive: false });
 
         (function(){
             let touchStartX = 0;
