@@ -36,7 +36,7 @@
     "title": "Bloons Tower Defense 4",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/btd%204.jpg",
     "description": "Bloons Tower Defense 4 is a classic tower defense game initially released in Flash.",
-    "path": "Games/ruffle/btd4.html",
+    "path": "/Games/ruffle/btd4.html",
     "category": "Strategy",
     "iframe": true
   },
@@ -69,7 +69,7 @@
     "title": "Bloons Super Monkey",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/bloons%20super%20monkey.jpg",
     "description": "Bloons Super Monkey is an arcade Bloons game and the first game in the Bloons Super Monkey series.",
-    "path": "Games/ruffle/bloonsupermonkey.html",
+    "path": "/Games/ruffle/bloonssupermonkey.html",
     "category": "Arcade",
     "iframe": true
   },
@@ -275,6 +275,16 @@
     "category": "Arcade",
     "iframe": true
   },
+
+  {
+    "title": "Pacman World",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/pacmanworld.jpg",
+    "description": "Pacman World is a fun and challenging Pacman game.",
+    "path": "Games/emulated/GBA/pacmanworld.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
   {
     "title": "Galaga",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/galaga.jpg",
@@ -619,6 +629,45 @@
     "category": "Adventure",
     "iframe": true
   },
+
+  {
+    "title": "Sonic Advance",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/sonicadvance.jpg",
+    "description": "Sonic Advance is a platform game featuring Sonic the Hedgehog.",
+    "path": "Games/emulated/GBA/sonicadvance.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+    {
+    "title": "Sonic Advance 2",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/sonicadvance2.png",
+    "description": "Sonic Advance 2 is the sequel to Sonic Advance, featuring new levels and characters.",
+    "path": "Games/emulated/GBA/sonicadvance2.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+
+
+   {
+    "title": "Sonic Advance 3",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/sonicadvance3.jpg",
+    "description": "Sonic Advance 3 is the final game in the Sonic Advance series.",
+    "path": "Games/emulated/GBA/sonicadvance3.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "Sonic CD",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/sonic%20cd.webp",
+    "description": "The original Sonic CD as you remember. With hard levels, bosses, and easter eggs.",
+    "path": "Games/standalone/soniccd.html",
+    "category": "Adventure",
+    "iframe": false
+  },
+
   {
     "title": "Cubefield",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/cube%20field.jpg",
@@ -772,6 +821,17 @@
     "category": "Arcade",
     "iframe": true
   },
+
+  {
+    "title": "Raft Wars 2",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/raft%20wars%202.webp",
+    "description": "The sequel to Raft Wars where it includes more levels and more obstacles to overcome!",
+    "path": "Games/ruffle/raftwars2.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+
   {
     "title": "Shopping Cart Hero",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/shopping%20cart%20hero.jpg",
@@ -2218,7 +2278,7 @@
     "description": "60 Second Burger Run is a fast-paced arcade game where you must prepare and serve burgers to customers within a time limit.",
     "path": "Games/ruffle/burgerrun.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Gravitee",
@@ -2363,6 +2423,34 @@
     "path": "Games/emulated/SNES/donkeykongcountry3.html",
     "category": "Adventure",
     "iframe": true
+  },
+
+
+  {
+    "title": "Chess",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/chess.jpg",
+    "description": "Play a game of chess against the computer or a friend.",
+    "path": "Games/standalone/chess.html",
+    "category": "Strategy",
+    "iframe": false
+  },
+
+  {
+    "title": "Max Dirt Bike",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/maxdirtbike.webp",
+    "description": "Max Dirt Bike is a fast-paced racing game where you control a dirt bike and navigate through various tracks.",
+    "path": "Games/ruffle/maxdirtbike.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Among Us (Web Version)",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/among%20us.webp",
+    "description": "Fanmade version of the popular mobile game Among Us.",
+    "path": "Games/standalone/amongus.html",
+    "category": "Strategy",
+    "iframe": false
   },
 
   {
