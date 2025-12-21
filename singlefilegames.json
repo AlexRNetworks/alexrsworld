@@ -7,6 +7,17 @@
     "category": "Runner",
     "iframe": true
   },
+
+  
+  {
+    "title": "Slope 2 Player",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/slope%202%20player.jpg",
+    "description": "A different version of slope that supports 2 player mode.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/slope2player.html",
+    "category": "Runner",
+    "iframe": true
+  },
+
   {
     "title": "Bloons Tower Defense",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/btd.jpg",
@@ -1309,6 +1320,16 @@
     "category": "Challenging",
     "iframe": true
   },
+
+    {
+    "title": "Geometry Dash Remastered",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/geometry%20dash%20remastered.jpg",
+    "description": "A remastered version of the classic mobile game Geometry Dash",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/gdremastered.html",
+    "category": "Challenging",
+    "iframe": true
+  },
+  
   {
     "title": "Fruit Ninja",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/fruit%20ninja.jpg",
@@ -2411,6 +2432,98 @@
     "category": "Strategy",
     "iframe": false
   },
+
+  
+  {
+    "title": "Ultrakill",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/ultrakill.avif",
+    "description": "ULTRAKILL is a fast-paced, ultraviolent, retro-inspired first-person shooter (FPS) where you play as a blood-fueled robot, V1, fighting through Hell after humanity's extinction.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/ultrakill.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Bendy & The Ink Machine",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/bendy%20and%20the%20ink%20machine.jpg",
+    "description": "The classic Bendy is a first person horror game where you uncover the dark secrets about the abandoned factory.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/bendy.html",
+    "category": "Challenging",
+    "iframe": true
+  },
+
+  {
+    "title": "Tanuki Sunset",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/tanuki%20sunset.png",
+    "description": "Tanuki Sunset Classic is a third-person longboard-skating game where players play as a raccoon skating downhill.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/tanukisunset.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Highway Racer 3D",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/highway%20racer%203d.jpg",
+    "description": "Highway Racer 3D is a fast-paced, endless arcade driving game where you navigate busy highways and dodge traffic.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/highwayracer3D.html",
+    "category": "Racing",
+    "iframe": true
+  },
+
+  {
+    "title": "The Legend Of Zelda Majoras Mask",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/majorasmask.jpg",
+    "description": "The Legend of Zelda: Majora's Mask is a darker Zelda adventure where Link, after Ocarina of Time, gets trapped in the parallel world of Termina.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/emulated/N64/majorasmask.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "The Legend Of Zelda Ocarina Of Time",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/ocarinaoftime.jpg",
+    "description": "The Legend of Zelda: Ocarina of Time is a landmark 3D action-adventure game where young Link journeys through Hyrule to stop the evil Ganondorf.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/emulated/N64/ocarinaoftime.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "The Legend Of Zelda Link To The Past",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/link%20to%20the%20past.avif",
+    "description": "The Legend of Zelda: A Link to the Past is a classic action-adventure game where Link journeys through the parallel worlds of Hyrule.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/emulated/SNES/linktothepast.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "Whack Your Boss",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/whack%20your%20boss.jpg",
+    "description": "You've finally had enough of your atrocious job. Choose your bosses fatality.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/ruffle/whackyourboss.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Whack Your Ex",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/whack%20your%20ex.jpg",
+    "description": "You're tired of your ex. You must choose her fate in this crazy game.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/ruffle/whackyourex.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Use Boxmen",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/useboxmen.jpg",
+    "description": "You must work with boxmen to solve various levels and challenge your brain in this complex puzzle game.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/ruffle/useboxmen.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+
 
   {
     "title": "Soundboard",
