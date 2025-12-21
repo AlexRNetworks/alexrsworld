@@ -1,4 +1,3 @@
-
 [
   {
     "title": "Slope",
@@ -8,6 +7,17 @@
     "category": "Runner",
     "iframe": true
   },
+
+  {
+    "title": "Slope 2 Player",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/slope%202%20player.jpg",
+    "description": "A different version of slope that supports 2 player mode.",
+    "path": "Games/standalone/slope2player.html",
+    "category": "Runner",
+    "iframe": true
+  },
+
+
   {
     "title": "Bloons Tower Defense",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/btd.jpg",
@@ -105,7 +115,6 @@
     "category": "Puzzle",
     "iframe": true
   },
-
   {
     "title": "Potty Racers",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/pottyracers.jfif",
@@ -192,7 +201,7 @@
     "description": "Color Tunnel is a fast-paced 3D arcade game.",
     "path": "Games/standalone/colortunnel.html",
     "category": "Runner",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Death Run 3D",
@@ -211,15 +220,14 @@
     "iframe": true,
     "otherversions": true
   },
-{
- "title": "Temple Run 2",
-"img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/master/assets/game%20images/temple%20run%202.jpg",
-"description": "Temple Run 2, developed by Imangi, is an infinite runner.",
-  "path": "Games/standalone/templerun2.html",
- "category": "Runner",
- "iframe": true
- },
-
+  {
+    "title": "Temple Run 2",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/master/assets/game%20images/temple%20run%202.jpg",
+    "description": "Temple Run 2, developed by Imangi, is an infinite runner.",
+    "path": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/master/Games/standalone/temple-run-2/index.html",
+    "category": "Runner",
+    "iframe": true
+  },
   {
     "title": "Google Feud",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/googlefeud.png",
@@ -276,7 +284,6 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Pacman World",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/pacmanworld.jpg",
@@ -285,14 +292,13 @@
     "category": "Adventure",
     "iframe": true
   },
-
   {
     "title": "Galaga",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/galaga.jpg",
     "description": "Play the classic Galaga game now!",
     "path": "Games/standalone/galaga.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Galaga Flash",
@@ -529,7 +535,7 @@
   {
     "title": "Papas Sushiria",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/sushi.jpg",
-    "description": "Papa\u2019s Sushiria is a casual restaurant game in which you create sushi for customers.",
+    "description": "Papas Sushiria is a casual restaurant game in which you create sushi for customers.",
     "path": "Games/ruffle/papas sushi.html",
     "category": "Cooking",
     "iframe": true
@@ -630,7 +636,6 @@
     "category": "Adventure",
     "iframe": true
   },
-
   {
     "title": "Sonic Advance",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/sonicadvance.jpg",
@@ -639,8 +644,7 @@
     "category": "Adventure",
     "iframe": true
   },
-
-    {
+  {
     "title": "Sonic Advance 2",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/sonicadvance2.png",
     "description": "Sonic Advance 2 is the sequel to Sonic Advance, featuring new levels and characters.",
@@ -648,10 +652,7 @@
     "category": "Adventure",
     "iframe": true
   },
-
-
-
-   {
+  {
     "title": "Sonic Advance 3",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/sonicadvance3.jpg",
     "description": "Sonic Advance 3 is the final game in the Sonic Advance series.",
@@ -659,16 +660,14 @@
     "category": "Adventure",
     "iframe": true
   },
-
   {
     "title": "Sonic CD",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/sonic%20cd.webp",
     "description": "The original Sonic CD as you remember. With hard levels, bosses, and easter eggs.",
     "path": "Games/standalone/soniccd.html",
     "category": "Adventure",
-    "iframe": false
+    "iframe": true
   },
-
   {
     "title": "Cubefield",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/cube%20field.jpg",
@@ -709,14 +708,13 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Baldis Basics",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/baldi.jpg",
     "description": "Baldi's Basics is a puzzle horror game which satirizes 1990s educational games.",
     "path": "Games/standalone/baldi.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Diner Dash Hometown Hero",
@@ -822,7 +820,6 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Raft Wars 2",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/raft%20wars%202.webp",
@@ -831,8 +828,6 @@
     "category": "Arcade",
     "iframe": true
   },
-
-
   {
     "title": "Shopping Cart Hero",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/shopping%20cart%20hero.jpg",
@@ -969,7 +964,6 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Om Nom Bounce",
     "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/om%20nom%20bounce.jpg",
@@ -984,7 +978,7 @@
     "description": "Join the tiles and reach 2048!",
     "path": "Games/standalone/2048.html",
     "category": "Puzzle",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "2048 Cupcakes",
@@ -992,7 +986,7 @@
     "description": "Join the cupcakes and reach the cupcake that represents 2048!",
     "path": "Games/standalone/2048cupcakes.html",
     "category": "Puzzle",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Bad Piggies",
@@ -1042,16 +1036,14 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Cookie Clicker",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/cookieclicker.jpg",
     "description": "Cookie Clicker is a game about making an absurd amount of cookies.",
     "path": "Games/standalone/cookieclicker.html",
     "category": "Idle",
-    "iframe": false
+    "iframe": true
   },
-
   {
     "title": "Moto-X3M Spooky Land",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/motospooky.png",
@@ -1060,7 +1052,6 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Moto-X3M Pool Party",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/moto%20x3m%20pool%20party.jpg",
@@ -1069,7 +1060,6 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Paper IO 2",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/paperio2.jpg",
@@ -1094,7 +1084,6 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Boxing Random",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/boxing%20random.png",
@@ -1103,14 +1092,13 @@
     "category": "Arcade",
     "iframe": true
   },
- 
   {
     "title": "1v1 LOL",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/1v1lol.jpg",
     "description": "Fight to survive in this epic multiplayer Battle Royale",
     "path": "Games/standalone/1v1lol.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Buildnow GG",
@@ -1118,7 +1106,7 @@
     "description": "BuildNow GG is an exciting online multiplayer building and shooting game.",
     "path": "Games/standalone/BuildNow.gg.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Jetpack Joyride",
@@ -1238,7 +1226,7 @@
     "description": "Big Tower Tiny Square is all about fantastic timing and big jumps.",
     "path": "Games/standalone/bigtower.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Big Tower Tiny Square 2",
@@ -1246,7 +1234,7 @@
     "description": "The sequel to Big Tower Tiny Square!",
     "path": "Games/standalone/bigtower2.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Crossy Road",
@@ -1280,7 +1268,6 @@
     "category": "Racing",
     "iframe": true
   },
-
   {
     "title": "Tiny Fishing",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/tiny%20fishing.jpg",
@@ -1321,6 +1308,17 @@
     "category": "Challenging",
     "iframe": true
   },
+
+  {
+    "title": "Geometry Dash Remastered",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/geometry%20dash%20remastered.jpg",
+    "description": "A remastered version of the classic mobile game Geometry Dash",
+    "path": "Games/standalone/gdremastered.html",
+    "category": "Challenging",
+    "iframe": true
+  },
+
+
   {
     "title": "Fruit Ninja",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/fruit%20ninja.jpg",
@@ -1361,7 +1359,6 @@
     "category": "Arcade",
     "iframe": true
   },
- 
   {
     "title": "Super Mario Flash",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/super%20mario%20flash.jpg",
@@ -1424,16 +1421,15 @@
     "description": "Take on the ultimate skateboarding adventure with Snow Rider and conquer icy slopes.",
     "path": "Games/standalone/snowrider3d.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
-
   {
     "title": "10 Minutes Till Dawn",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/10%20minutes.jpg",
     "description": "10 Minutes Till Dawn is an action bullet-hell roguelite game.",
     "path": "Games/standalone/10minutestilldawn.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Five Nights At Freddy's",
@@ -1441,7 +1437,7 @@
     "description": "Play the classic horror game now!",
     "path": "Games/standalone/fnaf.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Five Nights At Freddy's 2",
@@ -1449,7 +1445,7 @@
     "description": "The sequel to Five Nights At Freddys!",
     "path": "Games/standalone/fnaf2.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Five Nights At Freddy's 3",
@@ -1465,29 +1461,24 @@
     "description": "The fourth installment in the Five Nights At Freddy's series!",
     "path": "Games/standalone/fnaf4.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
-
-
   {
     "title": "Five Nights At Freddy's 4 Hallowen Edition",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/fnaf4halloween.jpg",
     "description": "The Halloween Edition of Five Nights At Freddy's 4!",
     "path": "Games/standalone/fnaf4halloween.html",
     "category": "Challenging",
-    "iframe": false 
+    "iframe": true
   },
-
-
   {
     "title": "FNAF: Ultimate Custom Night",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/ultimatecustomnight.webp",
     "description": "Ultimate Custom Night is a horror game where you are able to customize how the night plays out.",
     "path": "Games/standalone/ultimatecustomnight.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
-
   {
     "title": "Idle Breakout",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/idle%20breakout.png",
@@ -1502,7 +1493,7 @@
     "description": "Experience the thrill of playing piano like a pro with Magic Tiles 3",
     "path": "Games/standalone/magictiles3.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Archery World Tour",
@@ -1510,7 +1501,7 @@
     "description": "Focus... relax... release. Aim your shot carefully and use the wind to hit the bullseye in Archery World Tour.",
     "path": "Games/standalone/worldtour.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Bowmasters",
@@ -1518,7 +1509,7 @@
     "description": "Play Bowmasters, online for free in your browser.",
     "path": "Games/standalone/bowmasters.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Bitlife",
@@ -1526,7 +1517,7 @@
     "description": "Start a virtual life and make your own decisions!",
     "path": "Games/standalone/bitlife.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Dadish",
@@ -1580,7 +1571,7 @@
     "title": "Drive Mad",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/drive%20mad.png",
     "description": "Drive Mad is a car game where you drive on a track filled with obstacles.",
-    "path": "Games/standalone/drivemad.html",
+    "path": "Games/standalone/drive-mad-main/drive-mad-main/index.html",
     "category": "Arcade",
     "iframe": true
   },
@@ -1604,7 +1595,7 @@
     "title": "Crazy Cattle 3D",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/crazycattle.jpg",
     "description": "Play Crazy Cattle 3D now!",
-    "path": "Games/standalone/crazycattle3d.html",
+    "path": "Games/standalone/crazycattle3d/index.html",
     "category": "Arcade",
     "iframe": true
   },
@@ -1614,7 +1605,7 @@
     "description": "Block Blast is a Tetris-like puzzle game, challenging to eliminate as many blocks as possible in a limited space to get a higher score.",
     "path": "Games/standalone/blockblast.html",
     "category": "Puzzle",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Monkey Mart",
@@ -1622,7 +1613,7 @@
     "description": "Monkey Mart is a casual, simulation game where players manage and grow their own virtual supermarket.",
     "path": "Games/standalone/monkeymart.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Super Liquid Soccer",
@@ -1790,7 +1781,7 @@
     "description": "A Dance of Fire and Ice is a challenging, one-button rhythm game where players guide two orbiting planets down a winding path by tapping the screen or pressing a key in sync with the music",
     "path": "Games/standalone/fireandice.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Stickman Hook",
@@ -1846,7 +1837,7 @@
     "description": "Granny is a horror game where you need to escape from a creepy house and on top of that, a crazy grandma.",
     "path": "Games/standalone/granny.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Granny: Chapter 2",
@@ -1854,7 +1845,7 @@
     "description": "The sequel to Granny where its even more difficult than before. You must evade both granny and grandpa and escape the house.",
     "path": "Games/standalone/Granny 2.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "QWOP",
@@ -1878,7 +1869,7 @@
     "description": "Friday Night Funkin is a rhythm-based game where players must hit the right notes in time with the music to win battles against various characters.",
     "path": "Games/standalone/fridaynightfunkin.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Time Shooter",
@@ -1974,7 +1965,7 @@
     "description": "Play the classic Hole IO game now/1",
     "path": "Games/standalone/holeio.html",
     "category": "Racing",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "N-gon",
@@ -1982,7 +1973,7 @@
     "description": "N-gon is a challenging and addictive arcade game where you control a shape and navigate through a series of obstacles.",
     "path": "Games/standalone/ngon.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Mahjong Tower",
@@ -2030,7 +2021,7 @@
     "description": "Adventure Capitalist is an idle clicker game where you invest in various businesses to earn money and grow your empire.",
     "path": "Games/standalone/adventure.html",
     "category": "Idle",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Color Switch",
@@ -2038,7 +2029,7 @@
     "description": "Color Switch is a fun and addictive arcade game where you must navigate a ball through various obstacles by matching colors.",
     "path": "Games/standalone/colorswitch.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Rocket Soccer Derby",
@@ -2046,7 +2037,7 @@
     "description": "Rocket Soccer Derby is an exciting car soccer game where you drive rocket-powered cars to score goals against your opponents.",
     "path": "Games/standalone/rocketsoccer.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Angry Birds",
@@ -2054,7 +2045,7 @@
     "description": "Play the classic Angry Birds game now!",
     "path": "Games/standalone/Angry Birds.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Angry Birds Showdown",
@@ -2062,7 +2053,7 @@
     "description": "Play Angry Birds Showdown, an exciting twist on the classic Angry Birds game!",
     "path": "Games/standalone/angrybirdsshowdown.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Angry Birds Halloween",
@@ -2078,9 +2069,8 @@
     "description": "Stickman Golf is a fun and addictive golf game where you control a stickman and try to get the ball into the hole in as few strokes as possible.",
     "path": "Games/standalone/stickmangolf.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
- 
   {
     "title": "Kaboomz",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/kaboomz.jpg",
@@ -2103,7 +2093,7 @@
     "description": "Trivia Crack is a fun and addictive trivia game where you can challenge your friends and test your knowledge in various categories.",
     "path": "Games/standalone/triviacrack.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Drift Hunters",
@@ -2111,7 +2101,7 @@
     "description": "Drift Hunters is a thrilling car drifting game where you can customize your vehicles and perform impressive drifts on various tracks.",
     "path": "Games/standalone/drifthunters.html",
     "category": "Racing",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Drift Boss",
@@ -2127,7 +2117,7 @@
     "description": "Cluster Rush is an addictive arcade game where you navigate through various obstacles and challenges.",
     "path": "Games/standalone/clusterrush.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Flappy Dunk",
@@ -2135,7 +2125,7 @@
     "description": "Flappy Dunk is a fun and addictive arcade game where you control a basketball and try to score points by passing through hoops.",
     "path": "Games/standalone/Flappy Dunk.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Block the Pig",
@@ -2151,7 +2141,7 @@
     "description": "Arrange cells. Build machines. Destroy enemies.",
     "path": "Games/standalone/cellmachine.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "CircleO",
@@ -2159,7 +2149,7 @@
     "description": "CircleO is an addictive arcade game where you control a circle and navigate through various obstacles and challenges.",
     "path": "Games/standalone/circleo.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Doge Miner",
@@ -2167,7 +2157,7 @@
     "description": "Doge Miner is an idle clicker game where you mine for Dogecoin and upgrade your mining equipment to earn more coins.",
     "path": "Games/standalone/dogeminer.html",
     "category": "Idle",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Earn to Die",
@@ -2191,7 +2181,7 @@
     "description": "A short old-school FPS with fast gameplay and punchy weapons.",
     "path": "Games/standalone/station141.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Slender the Eight Pages",
@@ -2199,7 +2189,7 @@
     "description": "Slender the Eight Pages is a horror game where you must collect eight pages while avoiding the terrifying Slender Man.",
     "path": "Games/standalone/slender.html",
     "category": "Challenging",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Achievement Unlocked",
@@ -2239,7 +2229,7 @@
     "description": "Dragon vs Blocks is an exciting arcade game where you control a dragon and break through blocks to score points and unlock new dragons.",
     "path": "Games/standalone/dragonvsbricks.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Bob the Robber",
@@ -2297,14 +2287,13 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Cyber Cars Punk Racing",
     "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/cybercarspunkracing.jpg",
     "description": "Cyber Cars Punk Racing is a futuristic racing game where you can customize your vehicles and compete in high-speed races through neon-lit cityscapes.",
     "path": "Games/standalone/cyberpunkracing.html",
     "category": "Racing",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Cars Simulator",
@@ -2312,7 +2301,7 @@
     "description": "Cars Simulator is an open-world driving game where you can explore and customize your vehicles",
     "path": "Games/standalone/carssimulator.html",
     "category": "Racing",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Wordle",
@@ -2328,10 +2317,8 @@
     "description": "Tube Jumpers is an two player arcade game where you control a character jumping through tubes while avoiding obstacles and collecting points.",
     "path": "Games/standalone/tubejumpers.html",
     "category": "Arcade",
-    "iframe": false
+    "iframe": true
   },
-
-
   {
     "title": "Pokemon Ruby Version",
     "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/ruby.jpg",
@@ -2340,9 +2327,7 @@
     "category": "Strategy",
     "iframe": true
   },
-
-
- {
+  {
     "title": "Pokemon Sapphire Version",
     "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/sapphire.webp",
     "description": "Play the classic Pokemon Sapphire Version game now!",
@@ -2398,7 +2383,6 @@
     "category": "Adventure",
     "iframe": true
   },
-
   {
     "title": "Donkey Kong Country",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/donkeykongcountry.jpg",
@@ -2407,16 +2391,14 @@
     "category": "Adventure",
     "iframe": true
   },
-
   {
     "title": "Donkey Kong Country 2",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/donkeykongcountry2.jpg",
     "description": "Join Diddy Kong and Dixie Kong on a new adventure to rescue Donkey Kong in this classic platformer sequel.",
     "path": "Games/emulated/SNES/donkeykongcountry2.html",
     "category": "Adventure",
-    "iframe": true  
+    "iframe": true
   },
-
   {
     "title": "Donkey Kong Country 3",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/donkeykongcountry3.webp",
@@ -2425,17 +2407,14 @@
     "category": "Adventure",
     "iframe": true
   },
-
-
   {
     "title": "Chess",
-    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/chess.png",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/chess.jpg",
     "description": "Play a game of chess against the computer or a friend.",
     "path": "Games/standalone/chess.html",
     "category": "Strategy",
-    "iframe": false
+    "iframe": true
   },
-
   {
     "title": "Max Dirt Bike",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/maxdirtbike.webp",
@@ -2444,14 +2423,103 @@
     "category": "Arcade",
     "iframe": true
   },
-
   {
     "title": "Among Us (Web Version)",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/among%20us.webp",
     "description": "Fanmade version of the popular mobile game Among Us.",
     "path": "Games/standalone/amongus.html",
     "category": "Strategy",
-    "iframe": false
+    "iframe": true
+  },
+
+  {
+    "title": "Ultrakill",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/ultrakill.avif",
+    "description": "ULTRAKILL is a fast-paced, ultraviolent, retro-inspired first-person shooter (FPS) where you play as a blood-fueled robot, V1, fighting through Hell after humanity's extinction.",
+    "path": "Games/standalone/ultrakill.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Bendy & The Ink Machine",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/bendy%20and%20the%20ink%20machine.jpg",
+    "description": "The classic Bendy is a first person horror game where you uncover the dark secrets about the abandoned factory.",
+    "path": "Games/standalone/bendy.html",
+    "category": "Challenging",
+    "iframe": true
+  },
+
+  {
+    "title": "Tanuki Sunset",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/tanuki%20sunset.png",
+    "description": "Tanuki Sunset Classic is a third-person longboard-skating game where players play as a raccoon skating downhill.",
+    "path": "Games/standalone/tanukisunset.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Highway Racer 3D",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/highway%20racer%203d.jpg",
+    "description": "Highway Racer 3D is a fast-paced, endless arcade driving game where you navigate busy highways and dodge traffic.",
+    "path": "Games/standalone/highwayracer3D.html",
+    "category": "Racing",
+    "iframe": true
+  },
+
+  {
+    "title": "The Legend Of Zelda Majoras Mask",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/majorasmask.jpg",
+    "description": "The Legend of Zelda: Majora's Mask is a darker Zelda adventure where Link, after Ocarina of Time, gets trapped in the parallel world of Termina.",
+    "path": "Games/emulated/N64/majorasmask.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "The Legend Of Zelda Ocarina Of Time",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/ocarinaoftime.jpg",
+    "description": "The Legend of Zelda: Ocarina of Time is a landmark 3D action-adventure game where young Link journeys through Hyrule to stop the evil Ganondorf.",
+    "path": "Games/emulated/N64/ocarinaoftime.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "The Legend Of Zelda Link To The Past",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/link%20to%20the%20past.avif",
+    "description": "The Legend of Zelda: A Link to the Past is a classic action-adventure game where Link journeys through the parallel worlds of Hyrule.",
+    "path": "Games/emulated/SNES/linktothepast.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+  {
+    "title": "Whack Your Boss",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/whack%20your%20boss.jpg",
+    "description": "You've finally had enough of your atrocious job. Choose your bosses fatality.",
+    "path": "Games/ruffle/whackyourboss.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Whack Your Ex",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/whack%20your%20ex.jpg",
+    "description": "You're tired of your ex. You must choose her fate in this crazy game.",
+    "path": "Games/ruffle/whackyourex.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+
+  {
+    "title": "Use Boxmen",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/useboxmen.jpg",
+    "description": "You must work with boxmen to solve various levels and challenge your brain in this complex puzzle game.",
+    "path": "Games/ruffle/useboxmen.html",
+    "category": "Puzzle",
+    "iframe": true
   },
 
   {
@@ -2468,7 +2536,7 @@
     "description": "A simple website that looks like it was made for 30 dollars (a soundboard).",
     "path": "Apps/30dollarwebsite.html",
     "category": "Apps",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Emulator JS",
@@ -2476,7 +2544,7 @@
     "description": "Emulator JS is a web-based emulator that allows you to play classic console games directly in your browser.",
     "path": "Apps/emulatorjs.html",
     "category": "Apps",
-    "iframe": false
+    "iframe": true
   },
   {
     "title": "Ruffle",
@@ -2484,6 +2552,14 @@
     "description": "Ruffle is an open-source Flash Player emulator that allows you to play Flash content directly in your web browser without the need for the original Flash Player plugin.",
     "path": "Apps/ruffle.html",
     "category": "Apps",
-    "iframe": false
+    "iframe": true
+  },
+
+  {
+    "title": "Alexr Code Editor",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/code.png",
+    "description": "Use our very own code editor where you can create and downloadyour own projects!",
+    "path": "Apps/codeeditor.html",
+    "iframe": true
   }
 ]
