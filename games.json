@@ -1346,7 +1346,7 @@
   {
     "title": "Pandemic 2",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/pandemic%202.jpg",
-    "description": "In this game your goal is to infect everyone in the world!",
+ "description": "In this game your goal is to infect everyone in the world!",
     "path": "Games/ruffle/pandemic2.html",
     "category": "Arcade",
     "iframe": true
@@ -1571,7 +1571,7 @@
     "title": "Drive Mad",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/drive%20mad.png",
     "description": "Drive Mad is a car game where you drive on a track filled with obstacles.",
-    "path": "Games/standalone/drivemad.html",
+    "path": "Games/standalone/drive-mad-main/drive-mad-main/index.html",
     "category": "Arcade",
     "iframe": true
   },
@@ -1595,7 +1595,7 @@
     "title": "Crazy Cattle 3D",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/crazycattle.jpg",
     "description": "Play Crazy Cattle 3D now!",
-    "path": "Games/standalone/crazycattle3d.html",
+    "path": "Games/standalone/crazycattle3d/index.html",
     "category": "Arcade",
     "iframe": true
   },
@@ -2521,6 +2521,62 @@
     "category": "Puzzle",
     "iframe": true
   },
+
+{
+  "title": "B-Cubed",
+  "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/b-cubed.webp",
+  "description": "Rotate the block to pass through every tile and reach the finish square in this tricky puzzle game.",
+  "path": "Games/ruffle/bcubed.html",
+  "category": "Puzzle",
+  "iframe": true
+},
+
+{
+  "title": "Mother 1 + 2",
+  "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mother.jpg",
+  "description": "Experience the beginning of the iconic series in this classic RPG including the sequel!",
+  "path": "Games/emulated/GBA/mother.html",
+  "category": "RPG",
+  "iframe": true
+},
+
+{
+  "title": "Mother 3",
+  "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mother%203.jpg",
+  "description": "Experience the emotional final chapter of the Mother trilogy.",
+  "path": "Games/emulated/GBA/mother3.html",
+  "category": "Adventure",
+  "iframe": true
+},
+
+{
+  "title": "Hobo",
+  "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/hobo.webp",
+  "description": "The classic brawler game. Help Hobo survive the streets!",
+  "path": "Games/ruffle/hobo.html",
+  "category": "Action",
+  "iframe": true
+},
+
+{
+    "title": "Mario Kart Super Circuit",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mariokartsupercircuit.jpg",
+    "description": "The classic GBA racing experience. Race through 40 classic tracks and compete to win it all!",
+    "path": "Games/emulated/GBA/mariokartsupercircuit.html",
+    "category": "Racing",
+    "iframe": true
+  },
+
+  {
+  "title": "Mario & Luigi: Superstar Saga",
+  "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/superstarsaga.jpg",
+  "description": "Embark on a hilarious RPG adventure through the Beanbean Kingdom with Mario and Luigi!",
+  "path": "Games/emulated/GBA/superstarsaga.html",
+  "category": "Adventure",
+  "iframe": true
+},
+
+
 
   {
     "title": "Soundboard",
