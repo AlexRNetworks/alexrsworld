@@ -2487,6 +2487,57 @@
     "category": "Puzzle",
     "iframe": true
   },
+
+   {
+    "title": "B-Cubed",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/b-cubed.webp",
+    "description": "Rotate the block to pass through every tile and reach the finish square in this tricky puzzle game.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/Ruffle/bcubed.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Mother (Earthbound Beginnings)",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mother.jpg",
+    "description": "Experience the beginning of the iconic series in this classic RPG.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/emulated/GBA/mother.html",
+    "category": "RPG",
+    "iframe": true
+  },
+  {
+    "title": "Mother 3",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mother%203.jpg",
+    "description": "Experience the emotional final chapter of the Mother trilogy.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/emulated/GBA/mother3.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+  {
+    "title": "Hobo",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/hobo.webp",
+    "description": "The original Flash classic! Fight your way through the streets.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/Games/ruffle/hobo.html",
+    "category": "Action",
+    "isFlash": true
+  },
+  {
+    "title": "Mario Kart Super Circuit",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mariokartsupercircuit.jpg",
+    "description": "The classic GBA racing experience. Race through 40 tracks and compete to win it all!",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/emulated/GBA/mariokartsupercircuit.html",
+    "category": "Racing",
+    "iframe": true
+  },
+  {
+    "title": "Mario & Luigi: Superstar Saga",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/superstarsaga.jpg",
+    "description": "Embark on a hilarious RPG adventure through the Beanbean Kingdom with Mario and Luigi!",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/emulated/GBA/superstarsaga.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+
+
   {
     "title": "Soundboard",
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/dskjfoisjfsjio.github.io/main/assets/game%20images/soundboard.png",
