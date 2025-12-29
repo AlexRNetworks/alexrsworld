@@ -350,7 +350,6 @@
     "path": "Games/ruffle/bloons.html",
     "category": "Strategy",
     "iframe": true,
-    "otherversions": true
   },
   {
     "title": "Bloons Player Pack 2",
@@ -2271,7 +2270,6 @@
     "path": "Games/standalone/subwaysurfers.html",
     "category": "Runner",
     "iframe": true,
-    "otherversions": true
   },
   {
     "title": "Subway Surfers: Havana",
