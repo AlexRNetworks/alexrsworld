@@ -2982,5 +2982,80 @@
     "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/ruffle/zombocalypse2.html",
     "category": "Arcade",
     "iframe": true
+  },
+
+   {
+    "title": "8 Ball Pool",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/8ball.webp",
+    "description": "The world's number one pool game! Play with friends or legends.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/8ballclassic.html",
+    "category": "Sports",
+    "iframe": true
+  },
+  {
+    "title": "COD Zombies",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/cod%20zombies.jpg",
+    "description": "Survive endless waves of the undead in this intense shooter.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/codzombiesportable.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+  {
+    "title": "Five Nights at Candy's",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/five%20nights%20at%20candys.webp",
+    "description": "Can you survive the night at the new and improved Candy's Burger & Fries?",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/fnac.html",
+    "category": "Horror",
+    "iframe": true
+  },
+  {
+    "title": "Five Nights at Candy's 2",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/five%20nights%20at%20candys%202.webp",
+    "description": "The horror continues with new animatronics and new ways to die.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/fnac2.html",
+    "category": "Horror",
+    "iframe": true
+  },
+  {
+    "title": "Mortal Kombat",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mk.png",
+    "description": "The classic fighting game. Test your might and finish them!",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/mortalkombat.html",
+    "category": "Fighting",
+    "iframe": true
+  },
+  {
+    "title": "Mortal Kombat 2",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mk%202.png",
+    "description": "Classic fighting action with even more brutal fatalities.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/mortalkombat2.html",
+    "category": "Fighting",
+    "iframe": true
+  },
+  {
+    "title": "Mortal Kombat 3",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/mk%203.webp",
+    "description": "The third tournament begins. Choose your fighter and prepare for battle.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/mortalkombat3.html",
+    "category": "Fighting",
+    "iframe": true
+  },
+
+  
+  {
+    "title": "Ragdoll Archers",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/ragdoll%20archers.png",
+    "description": "Master physics-based archery in this addictive ragdoll game.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/ragdollarchers.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+  {
+    "title": "Time Shooter 3",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/time%20shooter%203.jpg",
+    "description": "Time only moves when you move. Strategy meets FPS action.",
+    "path": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/Games/standalone/timeshooter3.html",
+    "category": "Arcade",
+    "iframe": true
   }
 ]
