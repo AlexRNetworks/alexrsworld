@@ -493,7 +493,6 @@
         overflow: hidden;
     }
 
-    /* Favorite button for library cards */
     .lib-fav-btn {
         position: absolute;
         top: 8px;
@@ -790,13 +789,11 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
         .show-bar-btn { display: block !important; }
         .restore-bar-btn { top: 12px; }
 
-        /* Make top-bar more compact and stack actions */
         .top-bar { display: flex; flex-direction: row; align-items: center; }
         .top-bar .site-title-group { order: 1; }
         .top-bar .nav-hint { order: 3; display: none; }
         .top-bar .clock-area { order: 2; }
 
-        /* Overlay header & grid behavior */
         .library-overlay, .otherOverlay { padding: 12px; }
         .library-overlay .lib-header, .otherOverlay .lib-header { position: sticky; top: 0; z-index: 5; background: rgba(11,23,48,0.98); padding-top: 8px; padding-bottom: 8px; }
         .library-overlay .lib-grid { overflow-y: auto; max-height: calc(100vh - 220px); padding-bottom: 30px; }
@@ -808,7 +805,6 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
         .category-btn { padding: 10px 12px; font-size: 0.95rem; }
         .lib-card { min-height: 110px; border-radius: 6px; }
 
-        /* Tabs & buttons should be touch-friendly */
         .other-tabs { overflow-x: auto; padding-bottom: 8px; }
         .tab-btn { padding: 10px 14px; border-radius: 8px; white-space: nowrap; }
     }
@@ -1094,7 +1090,6 @@ let draggedLibTitle = null;
             select: new Audio('https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/alexrsworld@main/sounds/select.mp3'),
         };
         
-        // Per-sound cooldowns (ms) to avoid duplicates while allowing frequent hover sounds
         const _soundCooldowns = { hover: 80, select: 220, click: 220 };
         const _lastSoundPlay = {};
 
@@ -2114,7 +2109,6 @@ function launchGame(game) {
                             }
                         }
 
-                        // Make sure we return the selection to the first game after closing
                         try { updateSelection(4); } catch (e) { console.warn('updateSelection on Escape close failed', e); }
                     }
                 }
@@ -2345,6 +2339,7 @@ body.theme-red {
 
 </body>
 </html>
+
 
 
 
