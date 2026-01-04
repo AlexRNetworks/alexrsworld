@@ -2273,7 +2273,7 @@
   },
   {
     "title": "Subway Surfers: Havana",
-    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/subway-havana.jpg",
+    "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/subway%20surfers%20havana.webp",
     "description": "Explore the colorful and historic streets of Havana! Keep the run going through this beautiful Caribbean city.",
     "path": "Games/standalone/subwaysurfershavana.html",
     "category": "Runner",
