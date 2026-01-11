@@ -3210,7 +3210,7 @@
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/baseball%20bros.avif",
     "description": "Step up to the plate in this fast-paced, competitive baseball sim featuring smooth arcade mechanics and high-score challenges.",
     "path": "Games/standalone/baseballbros.html",
-    "category": "Arcade",
+    "category": "Sports",
     "iframe": true
   },
   {
@@ -3218,7 +3218,7 @@
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/doom.jpg",
     "description": "Relive the legendary FPS that defined a genre. Fight through hordes of demons in a relentless battle for survival on Mars.",
     "path": "Games/standalone/doom.html",
-    "category": "Action",
+    "category": "Arcade",
     "iframe": true
   },
   {
@@ -3242,7 +3242,7 @@
     "img": "https://raw.githubusercontent.com/dskjfoisjfsjio/Standalone-games/main/assets/football%20bros.jpg",
     "description": "Experience big-head football action with easy-to-learn controls and explosive plays in this high-energy sports arcade game.",
     "path": "Games/standalone/footballbros.html",
-    "category": "Arcade",
+    "category": "Sports",
     "iframe": true
   },
   {
