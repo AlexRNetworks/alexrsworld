@@ -2474,14 +2474,119 @@ body.theme-red {
     })();
 </script>
 
+    <script>
+(function() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+        #ps4-splash-screen {
+            position: fixed; inset: 0; z-index: 2147483647;
+            background-size: cover; background-position: center;
+            display: none; justify-content: center; align-items: center;
+            opacity: 0; transition: opacity 0.5s ease; pointer-events: none;
+        }
+        #ps4-splash-screen::before {
+            content: ''; position: absolute; inset: 0; background: inherit;
+            filter: blur(40px) brightness(0.4); transform: scale(1.1);
+        }
+        #ps4-splash-screen img {
+            position: relative; max-height: 40%; max-width: 80%;
+            border-radius: 12px; box-shadow: 0 40px 100px rgba(0,0,0,0.9);
+            transform: scale(0.7); transition: transform 0.8s cubic-bezier(0.1, 0, 0.1, 1);
+        }
+        #ps4-splash-screen.active { opacity: 1; display: flex; }
+        #ps4-splash-screen.active img { transform: scale(1); }
+        .ps4-hide-modal { opacity: 0 !important; visibility: hidden !important; }
+    `;
+    document.head.appendChild(style);
 
+    const splash = document.createElement('div');
+    splash.id = 'ps4-splash-screen';
+    document.body.appendChild(splash);
 
-    
+    let isLaunching = false;
+    const injectToggle = () => {
+        const menu = document.getElementById('other_themes');
+        if (menu && !document.getElementById('ps4_startup_toggle')) {
+            const isEnabled = localStorage.getItem('ps4_startup_final') === 'true';
+            menu.insertAdjacentHTML('beforeend', `
+                <hr style="margin:20px 0; border-color:rgba(255,255,255,0.1);">
+                <p>PS4 Startup Animation:</p>
+                <button class="close-btn" id="ps4_startup_toggle" onclick="window.togglePS4Startup()">
+                    ${isEnabled ? "Disable PS4 Startup" : "Enable PS4 Startup"}
+                </button>
+            `);
+        }
+    };
+
+    window.togglePS4Startup = function() {
+        let isEnabled = localStorage.getItem('ps4_startup_final') === 'true';
+        isEnabled = !isEnabled;
+        localStorage.setItem('ps4_startup_final', isEnabled);
+        document.getElementById('ps4_startup_toggle').innerText = isEnabled ? "Disable PS4 Startup" : "Enable PS4 Startup";
+    };
+
+    const applyHook = () => {
+        if (window.launchGame && !window.launchGame._ps4Hooked) {
+            const originalLaunch = window.launchGame;
+            
+            window.launchGame = function(game) {
+                const isEnabled = localStorage.getItem('ps4_startup_final') === 'true';
+                const gameImg = game.image || game.img || game.cover;
+
+                if (isLaunching) return; 
+
+                if (isEnabled && game && gameImg && !game.systemType) {
+                    isLaunching = true;
+
+                    if (typeof window.pauseAmbience === 'function') {
+                        window.pauseAmbience();
+                    }
+
+                    splash.style.backgroundImage = `url(${gameImg})`;
+                    splash.innerHTML = `<img src="${gameImg}">`;
+                    splash.style.display = 'flex';
+                    
+                    setTimeout(() => {
+                        splash.classList.add('active');
+                        if (window.infoArea) window.infoArea.style.opacity = '0';
+                    }, 10);
+
+                    setTimeout(() => {
+                        originalLaunch(game);
+                        
+                        const checkModal = setInterval(() => {
+                            const modal = document.querySelector('.game-modal') || document.getElementById('game_modal');
+                            if (modal) {
+                                modal.classList.add('ps4-hide-modal');
+                                clearInterval(checkModal);
+                                
+                                setTimeout(() => {
+                                    splash.classList.remove('active');
+                                    modal.classList.remove('ps4-hide-modal');
+                                    modal.style.transition = 'opacity 0.5s ease';
+                                    if (window.infoArea) window.infoArea.style.opacity = '1';
+                                    
+                                    setTimeout(() => { 
+                                        splash.style.display = 'none'; 
+                                        isLaunching = false;
+                                    }, 600);
+                                }, 400);
+                            }
+                        }, 50);
+                    }, 1300);
+                } else {
+                    originalLaunch(game);
+                }
+            };
+            window.launchGame._ps4Hooked = true;
+        }
+    };
+
+    setInterval(() => {
+        applyHook();
+        injectToggle();
+    }, 1000);
+})();
+</script>  
 </body>
 </html>
-
-
-
-
-
-
