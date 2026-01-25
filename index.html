@@ -831,6 +831,80 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
     outline: 3px solid var(--ps-light-blue);
 }
 
+#other_changelog {
+    max-height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 15px 10px 5px;
+    scrollbar-width: thin;
+}
+
+.changelog-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    width: 98%;
+}
+
+.changelog-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: var(--ps-light-blue);
+    box-shadow: inset 0 0 10px rgba(0, 160, 233, 0.2);
+}
+
+.changelog-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--ps-light-blue);
+}
+
+.changelog-card p {
+    margin: 4px 0 0 0;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.changelog-detail-overlay {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 450px;
+    background: rgba(15, 15, 25, 0.98);
+    backdrop-filter: blur(20px);
+    border: 2px solid var(--ps-light-blue);
+    padding: 25px;
+    border-radius: 20px;
+    z-index: 99999;
+    box-shadow: 0 0 50px rgba(0,0,0,0.9);
+}
+
+.changelog-detail-content {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #e3f2fd;
+}
+
+.changelog-close-btn {
+    background: var(--ps-light-blue);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+}
+
 </style>
 </head>
 <body>
@@ -900,30 +974,131 @@ body.theme-red .game-modal > div:first-child { background: #3a0000 !important; c
 
         <div class="other-tabs">
             <button class="tab-btn" id="tab_changelog" onclick="showOtherTab('changelog')">Changelog</button>
-            <button class="tab-btn" id="tab_proxy" onclick="showOtherTab('proxy')">Proxy</button>
             <button class="tab-btn" id="tab_themes" onclick="showOtherTab('themes')">Themes</button>
             <button class="tab-btn" id="tab_sounds" onclick="showOtherTab('sounds')">Sounds</button>
             <button class="tab-btn" id="tab_cloak" onclick="showOtherTab('cloak')">Tab Cloak</button>
             <button class="tab-btn" id="tab_credits" onclick="showOtherTab('credits')">Credits</button>
         </div>
+ <div id="other_changelog">
 
-        <div id="other_changelog">
-          <p>12-14-25 Beta V1: Beta release.</p>
-          <p>12-15-25 Beta V2: Bug Fixes and implemented pokemon games and more!</p>
-          <p>12-17-25 Beta V3: More bug fixes and implement FNAF 4 Halloween and Ultimate Custom Night.</p>
-          <p>12-18-25 V1.0: RELEASE! You can now drag and drop cards on menu. Added Donkey Kong Country 1-.3</p>
-          <p>12-19-25 V1.1: Added Pacman World, Sonic Advance 1 - 3 Max Dirt Bike, Raft Wars 2, Among Us, and Chess.</p>
-          <p>12-21-25 V1.2: Added Ultrakill, Bendy, Whack your Boss, Whack your Ex, 3 Legend of Zelda games, Slope 2 Player, Tanuki Sunset, Highway Racer 3D, Use Boxmen, and Geometry Dash Remastered.</p>
-          <p>12-22-25 V1.3: Added Mother 1-3 Fan Translations, Hobo, B-cubed, Mario Kart Super Circuit, Mario & Luigi Superstar Saga and SNES Super Tennis.</p>
-          <p>12-25-25 V1.4: Merry Christmas! I added 25 new games but the full list would be too long to list here so ill summarize. I added the wheely series, Dadish 3, & more games which are listed in the library. Join the Discord Server to see the full list. </p>
-          <p>12-29-25 V1.5: Added Bob the Robber 2, OVO series, Minecraft, & more!</p>
-          <p>12-31-25 V1.6: Added the rest of the Moto X3M games, Sonic Rush, Only up, FNAF World, Earn to Die 2, and Neon Blaster</p>
-          <p>1-1-26 V1.7: Happy new year to you all! I added MK series, COD Zombies, & more join the server to view the full changelog details since I cannot fit all the text here for now.</p>
-        </div>
+       <div class="changelog-card" onclick="openChangelog('Version 1.1.4', 'Huge update that adds new games and fixes bugs<br><br>🎮 New Games 🎮<br>• Troll Face Quest 1-13<br>• Slowroads<br>• Bounce Masters<br>• IQ Ball<br>• 60 Second Santa Run<br>• Big Ice Tower Tiny Square<br>• Big Neon Tower Tiny Square<br>• Capybara Clicker<br>• Buckshot Roulette<br>• Half Life<br>• Hollow Knight<br><br>🐛 Bug fix 🐛<br>• When I added games they were supposed to sort a-z. They seemed to go to the bottom instead of properly sorting. I\'ve modified that section of the code that is responsible for sorting and its now hopefully fixed. If not ill find a solution later.<br><br>‼️ The Changelog is now revamped ‼️<br>• The changelog looks a lot better now and its now updated fully. Versions aren\'t also just gonna jump from 1.1 to 1.2 but instead it\'ll be 1.0.1 1.0.2 etc.<br><br>Stay tuned for more updates and be sure to check out the road map (it needs to be updated but its everything me and Michigan are doing to unblock stuff for you guys)')">
+    <h3>V1.1.4 - New Games, Changelog Reimagined, & bug fixes</h3>
+    <p>1-25-26 • Click for details</p>
+</div>
 
-        <div id="other_proxy" style="display:none;">
-            <p>Coming soon!</p>
-        </div>
+         <div class="changelog-card" onclick="openChangelog('Version 1.1.3', 'New Games:<br>• Baldis Fun New School Ultimate<br>• Blocky Snakes<br>• CircloO 2<br>• Bad Parenting<br>• Newgrounds Rumble<br>• Pacman Superfast<br>• Vex 3 Xmas')">
+    <h3>V1.1.3 - New Games</h3>
+    <p>1-24-26 • Click for details</p>
+</div>
+
+      <div class="changelog-card" onclick="openChangelog('Version 1.1.2', 'Been busy but added some new games:<br>• Shift 1<br>• Shift 2<br>• Shift 3<br>• Mario Party 3<br>• Rolling Sky<br>• Rooftop Snipers 2<br>• Super Smash Bros<br>• Traffic Jam 3D<br>• Ms Pacman<br>• Retro Highway')">
+    <h3>V1.1.2 - New Games</h3>
+    <p>1-22-26 • Click for details</p>
+</div>
+
+            <div class="changelog-card" onclick="openChangelog('Version 1.1.1', 'New Games:<br>• The Immortal<br>• Madden NFL 09<br>• Hobo 2<br>• Hobo 3<br>• Hobo 4<br>• Hobo 5<br>• Hobo 6<br>• Hobo 7<br><br>New app<br>• Astra by DragonX which lets you play Roblox, Clash Royale, & more!')">
+    <h3>V1.1.1 - New Games</h3>
+    <p>1-18-26 • Click for details</p>
+</div>
+            <div class="changelog-card" onclick="openChangelog('Version 1.1', 'New Games:<br>• Geometry Dash Subzero<br>• Geometry Dash World<br>• Getting Over it<br>• Solar Smash<br>• Tall Man Run<br>• Sonic Battle<br>• Tetris (GBA)<br>• Bridge Race<br>• Basketball Legends<br><br>There is also a setting on the website now in themes which allows you to mimic how the PS4 starts up games.')">
+    <h3>V1.1 - Version 1.1 + New Games</h3>
+    <p>1-15-26 • Click for details</p>
+</div>
+
+            <div class="changelog-card" onclick="openChangelog('Version 1.0.9', 'New Games:<br>• Super Mario Bros<br>• Super Mario Bros 2<br>• Super Mario Bros 3<br>• Scary Teacher 3D<br>• Football Bros<br>• Baseball Bros<br>• Mario Party<br>• Mario Party 2<br>• FNAF Sister Location<br>• FNAF Pizzeria Simulator<br>• DOOM<br>• Fallout<br>• Slope 3<br><br>')">
+    <h3>V1.0.9 - New Games</h3>
+    <p>1-11-26 • Click for details</p>
+</div>
+
+     <div class="changelog-card" onclick="openChangelog('Version 1.0.8', 'New Games:<br>• A Koopa\'s Revenge<br>• A Koopa\'s Revenge 2<br>• Basket Bros<br>• Blaze Drifter<br>• Blocky Demolition Derby<br>• Flash Tennis<br>• Bloons Player Pack 4<br>• Bloons Player Pack 5<br>• 3dash<br>• Slime Rancher<br>• Super Mario 63<br><br>Bug Fixed:<br>• Five Night\'s At Freddys<br><br>I noticed a bug on the github where the image for subway surfers havana wasn’t working. Therefore I have fixed it and slapped in some new versions as well:<br>• Subway Surfers London<br>• Subway Surfers Mexico<br>• Subway Surfers Monaco<br>• Subway Surfers New Orleans<br>• Subway Surfers Zurich')">
+    <h3>V1.0.8 - New Games, Fixed FNAF 1 & added more Subway Surfers versions</h3>
+    <p>1-4-26 • Click for details</p>
+</div>
+
+    <div class="changelog-card" onclick="openChangelog('Version 1.0.7', 'Happy new year to you all! I added:<br>• MK series<br>• COD Zombies<br>• & more!<br><br>Join the server to view the full details.')">
+        <h3>V1.0.7 - New Year Update</h3>
+        <p>1-1-26 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Version 1.0.6', 'Added the following games:<br>• Moto X3M games (Complete collection)<br>• Sonic Rush<br>• Only Up<br>• FNAF World<br>• Earn to Die 2<br>• Neon Blaster')">
+        <h3>V1.0.6 - Expansion</h3>
+        <p>12-31-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Version 1.0.5', 'Added:<br>• Bob the Robber 2<br>• OVO series<br>• Minecraft<br>• & more!')">
+        <h3>V1.0.5 - Small Update</h3>
+        <p>12-29-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Version 1.0.4', 'Merry Christmas! I added 25 new games. Summary:<br>• Wheely series<br>• Dadish 3<br>• & many more listed in the library.<br><br>Join the Discord Server to see the full list!')">
+        <h3>V1.0.4 - Christmas Update</h3>
+        <p>12-25-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Version 1.0.3', 'Added:<br>• Mother 1-3 Fan Translations<br>• Hobo<br>• B-cubed<br>• Mario Kart Super Circuit<br>• Mario & Luigi Superstar Saga<br>• SNES Super Tennis')">
+        <h3>V1.0.3 - Nintendo & Classics</h3>
+        <p>12-22-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Version 1.0.2', 'Added:<br>• Ultrakill & Bendy<br>• Whack your Boss/Ex<br>• 3 Legend of Zelda games<br>• Slope 2 Player<br>• Tanuki Sunset<br>• Highway Racer 3D<br>• Use Boxmen<br>• Geometry Dash Remastered')">
+        <h3>V1.0.2 - Mega Update</h3>
+        <p>12-21-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Version 1.0.1', 'Added:<br>• Pacman World<br>• Sonic Advance 1 - 3<br>• Max Dirt Bike<br>• Raft Wars 2<br>• Among Us<br>• Chess')">
+        <h3>V1.0.1 - Flashback</h3>
+        <p>12-19-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Version 1.0', 'OFFICIAL RELEASE!<br>• You can now drag and drop cards on the menu.<br>• Added Donkey Kong Country 1-3.')">
+        <h3>V1.0 - Full Release</h3>
+        <p>12-18-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Beta V3', '• More bug fixes.<br>• Implemented FNAF 4 Halloween Edition.<br>• Added Ultimate Custom Night.')">
+        <h3>Beta V3</h3>
+        <p>12-17-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Beta V2', '• Major Bug Fixes.<br>• Implemented Pokémon games collection.<br>• General optimizations.')">
+        <h3>Beta V2</h3>
+        <p>12-15-25 • Click for details</p>
+    </div>
+
+    <div class="changelog-card" onclick="openChangelog('Beta V1', 'Initial Beta release of the site.')">
+        <h3>Beta V1</h3>
+        <p>12-14-25 • Click for details</p>
+    </div>
+</div>
+
+<div id="changelogDetail" class="changelog-detail-overlay">
+    <h2 id="detailTitle" style="color:var(--ps-light-blue); margin-top:0;"></h2>
+    <div id="detailBody" class="changelog-detail-content"></div>
+    <button class="changelog-close-btn" onclick="closeChangelog()">Back</button>
+</div>
+
+<script>
+function openChangelog(title, text) {
+    if (typeof playSound === "function") {
+        playSound('select');
+    }
+
+    document.getElementById('detailTitle').innerText = title;
+    document.getElementById('detailBody').innerHTML = text;
+    document.getElementById('changelogDetail').style.display = 'block';
+}
+
+function closeChangelog() {
+    if (typeof playSound === "function") {
+        playSound('click');
+    }
+
+    document.getElementById('changelogDetail').style.display = 'none';
+}
+</script>
+
+
+        
 
         <div id="other_themes" style="display:none;">
             <p>Select a theme:</p>
@@ -1264,7 +1439,7 @@ let draggedLibTitle = null;
         }
         
         
-       async function loadGames() {
+     async function loadGames() {
     loadFavorites(); 
 
     localStorage.removeItem('alexrGames_allGamesData');
@@ -1276,14 +1451,16 @@ let draggedLibTitle = null;
         }
         const data = await response.json();
         
-        allGamesData = Array.isArray(data) ? data : data.allGamesData || [];
+        let freshData = Array.isArray(data) ? data : data.allGamesData || [];
 
-        allGamesData.sort((a, b) => {
+        freshData.sort((a, b) => {
             return a.title.localeCompare(b.title, undefined, {
                 numeric: true,
                 sensitivity: 'base'
             });
         });
+
+        allGamesData = freshData;
 
         if (allGamesData.length === 0) {
             console.warn('games.json was empty or incorrectly formatted.');
@@ -1291,7 +1468,14 @@ let draggedLibTitle = null;
 
         try {
             const savedCustom = JSON.parse(localStorage.getItem('alexrGames_customOrder') || '[]');
-            if (Array.isArray(savedCustom) && savedCustom.length) {
+            const savedRecent = JSON.parse(localStorage.getItem('alexrGames_recent') || '[]');
+
+           
+            if (savedCustom.length > 0 && savedCustom.length !== allGamesData.length) {
+                console.log("New games detected! Resetting order to A-Z.");
+                localStorage.removeItem('alexrGames_customOrder');
+            } 
+            else if (Array.isArray(savedCustom) && savedCustom.length) {
                 const map = new Map(allGamesData.map(g => [g.title, g]));
                 const reordered = [];
                 savedCustom.forEach(title => {
@@ -1304,22 +1488,20 @@ let draggedLibTitle = null;
                     if (map.has(g.title)) reordered.push(g);
                 }
                 allGamesData = reordered;
-            } else {
-                const savedRecent = JSON.parse(localStorage.getItem('alexrGames_recent') || '[]');
-                if (Array.isArray(savedRecent) && savedRecent.length) {
-                    const map = new Map(allGamesData.map(g => [g.title, g]));
-                    const reordered = [];
-                    savedRecent.forEach(title => {
-                        if (map.has(title)) {
-                            reordered.push(map.get(title));
-                            map.delete(title);
-                        }
-                    });
-                    for (const g of allGamesData) {
-                        if (map.has(g.title)) reordered.push(g);
+            } 
+            else if (Array.isArray(savedRecent) && savedRecent.length) {
+                const map = new Map(allGamesData.map(g => [g.title, g]));
+                const reordered = [];
+                savedRecent.forEach(title => {
+                    if (map.has(title)) {
+                        reordered.push(map.get(title));
+                        map.delete(title);
                     }
-                    allGamesData = reordered;
+                });
+                for (const g of allGamesData) {
+                    if (map.has(g.title)) reordered.push(g);
                 }
+                allGamesData = reordered;
             }
         } catch (e) {
             console.warn('Failed to apply saved ordering:', e);
@@ -1331,6 +1513,15 @@ let draggedLibTitle = null;
     }
 
     buildLists();
+}
+
+function buildLists() {
+    const firstSix = allGamesData.slice(0, 6);
+    
+    displayList = [suggestItem, reportItem, favoritesItem, settingsItem, ...firstSix, libraryItem];
+    
+    initCarousel();
+    initLibraryGrid();
 }
         function buildLists() {
             const firstSix = allGamesData.slice(0, 6);
