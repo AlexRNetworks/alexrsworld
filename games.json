@@ -3574,5 +3574,189 @@
     "path": "Games/standalone/vex3xmas.html",
     "category": "Runner",
     "iframe": true
+  },
+  {
+    "title": "Troll Face Quest",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll1.jpeg",
+    "description": "The original point-and-click prankster adventure filled with absurd puzzles and internet humor.",
+    "path": "Games/ruffle/trollfacequest.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 2",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll2.jpeg",
+    "description": "More illogical puzzles and hilarious trolling in this classic sequel.",
+    "path": "Games/ruffle/trollfacequest2.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 3",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll3.jpeg",
+    "description": "Take the trolling to the next level with even weirder solutions and unexpected outcomes.",
+    "path": "Games/ruffle/trollfacequest3.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 4",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll4.jpg",
+    "description": "Olympic-themed trolling! Prank your way to a gold medal in the most ridiculous games ever.",
+    "path": "Games/ruffle/trollfacequest4.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 5",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll5.jpeg",
+    "description": "World Cup trolling! Use your wits to prank the biggest stars in soccer.",
+    "path": "Games/ruffle/trollfacequest5.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 6",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll6.jpg",
+    "description": "Sports-themed trolling continues with more outrageous puzzles and funny animations.",
+    "path": "Games/ruffle/trollfacequest6.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 7",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll7.jpeg",
+    "description": "A spooky collection of puzzles where you troll your favorite horror icons.",
+    "path": "Games/ruffle/trollfacequest7.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 8",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll8.jpeg",
+    "description": "Troll your way through the world of cinema in this movie-themed puzzle adventure.",
+    "path": "Games/ruffle/trollfacequest8.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 9",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll9.jpeg",
+    "description": "Even more internet memes and bizarre logic puzzles to test your patience.",
+    "path": "Games/ruffle/trollfacequest9.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 10",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll10.jpeg",
+    "description": "The tenth installment brings fresh memes and even more nonsensical solutions.",
+    "path": "Games/ruffle/trollfacequest10.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 11",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll11.jpg",
+    "description": "A TV-themed edition where you prank your favorite shows and characters.",
+    "path": "Games/ruffle/trollfacequest11.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 12",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll12.webp",
+    "description": "Travel through time to prank historical figures in this wacky puzzle game.",
+    "path": "Games/ruffle/trollfacequest12.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Troll Face Quest 13",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/troll13.jpeg",
+    "description": "Thirteen isn't unlucky for trolls! Discover new ways to prank in this massive collection.",
+    "path": "Games/ruffle/trollfacequest13.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Big Neon Tower Tiny Square",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/bigtowerneon.png",
+    "description": "A massive, neon-drenched platformer where you climb a giant tower to rescue your pineapple.",
+    "path": "Games/standalone/bigneontower.html",
+    "category": "Challenging",
+    "iframe": true
+  },
+  {
+    "title": "Big Ice Tower Tiny Square",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/bigtowerice.png",
+    "description": "The slippery sequel to the neon tower challenge. Watch your step on the icy platforms.",
+    "path": "Games/standalone/bigicetower.html",
+    "category": "Challenging",
+    "iframe": true
+  },
+  {
+    "title": "60 Second Santa Run",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/60secondsantarun.png",
+    "description": "Hurry! Santa has only one minute to deliver all the gifts in this festive arcade dash.",
+    "path": "Games/ruffle/60secondsantarun.html",
+    "category": "Runner",
+    "iframe": true
+  },
+  {
+    "title": "Slow Roads",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/slowroads.jpeg",
+    "description": "An endless driving simulator focused on relaxation and procedural scenery.",
+    "path": "Games/standalone/slowroads.html",
+    "category": "Racing",
+    "iframe": true
+  },
+  {
+    "title": "Capybara Clicker",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/capybaraclicker.jpeg",
+    "description": "Click to create an army of capybaras in this chill idle game.",
+    "path": "Games/standalone/capybaraclicker.html",
+    "category": "Idle",
+    "iframe": true
+  },
+  {
+    "title": "IQ Ball",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/iqball.jpeg",
+    "description": "Use your grapple to reach the target in as few moves as possible.",
+    "path": "Games/ruffle/iqball.html",
+    "category": "Puzzle",
+    "iframe": true
+  },
+  {
+    "title": "Bounce Masters",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/bouncemasters.jpeg",
+    "description": "Launch your penguin across the tundra and bounce off animals to travel as far as possible.",
+    "path": "Games/standalone/bouncemasters.html",
+    "category": "Arcade",
+    "iframe": true
+  },
+  {
+    "title": "Buckshot Roulette",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/buckshot.png",
+    "description": "A high-stakes game of chance with a 12-gauge shotgun in a gritty underground club.",
+    "path": "Games/standalone/buckshotroulette.html",
+    "category": "Horror",
+    "iframe": true
+  },
+  {
+    "title": "Hollow Knight",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/hollowknight.png",
+    "description": "Forge your own path in a vast ruined kingdom of insects and heroes.",
+    "path": "Games/standalone/hollowknight.html",
+    "category": "Adventure",
+    "iframe": true
+  },
+  {
+    "title": "Half Life",
+    "img": "https://cdn.jsdelivr.net/gh/dskjfoisjfsjio/Standalone-games@main/assets/halflife.png",
+    "description": "Experience the groundbreaking sci-fi shooter that changed narrative gaming forever.",
+    "path": "Games/standalone/halflife.html",
+    "category": "RPG",
+    "iframe": true
   }
 ]
