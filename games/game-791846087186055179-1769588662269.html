@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>michiganontop's Game - Alexr Network</title>
+  <style>
+    body { margin: 0; padding: 0; overflow: hidden; }
+    #loader { 
+      position: fixed; 
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      font-family: Arial, sans-serif; 
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="loader">Loading game...</div>
+  <script>
+    async function loadGame() {
+      try {
+        const res = await fetch(`https://cdn.jsdelivr.net/gh/AlexRNetworks/alexrsworld@latest/singlefile.html?user=791846087186055179&v=${Date.now()}`);
+        const html = await res.text();
+        
+        // Remove the loader
+        document.getElementById('loader').remove();
+        
+        // Replace entire document with fetched content
+        document.open();
+        document.write(html);
+        document.close();
+      } catch (error) {
+        document.getElementById('loader').textContent = 'Error loading game: ' + error.message;
+      }
+    }
+
+    loadGame();
+  </script>
+</body>
+</html>
